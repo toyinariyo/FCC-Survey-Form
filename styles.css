@@ -1,0 +1,47 @@
+body {
+  color: white;
+  background-color: #5D3FD3;
+}
+
+h1 {
+  text-align: center;
+  color: black;
+}
+
+#description {
+  text-align: center;
+  color: black;
+}
+
+form {
+  background-color: #800020;
+  padding: 40px;
+}
+
+.form-box {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 768px) {
+  .form-box {
+    max-width: 720px;
+  }
+}
+
+#form-section {
+  margin: 0px 0px 20px;
+  padding: 4px;
+}
+
+label {
+  margin: 0px 0px 8px;
+}
+
+.form-display {
+  display: block;
+  width: 100%;
+  padding: 6px 12px;
+  margin-top: 10px;
+}
