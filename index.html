@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="form-box">
+  <h1 id="title"> Toyin's Survey Form</h1>
+  <p id="description">Welcome to my survey form</p>
+  <form id="survey-form">
+    <div id="form-section">
+      <label id="name-label" for="name">Name</label>
+        <input type="text" name="name" id="name" class="form-display" placeholder="Please enter your name" required>
+    </div>
+    <div id="form-section">
+      <label id="email-label" for="email">Email</label>
+      <input type="email" name="email" id="email" class="form-display" placeholder="Please enter your email" required>
+    </div>
+    <div id="form-section">
+      <label id="number-label" for="age">Age (optional)</label>
+      <input type="number" name="age" id="number" min="13" max="100" class="form-display" placeholder="Please select your age - minimum age is 13">
+  </form>
+ </div>
+</body>
+</html>
