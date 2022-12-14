@@ -31,14 +31,20 @@ form {
 }
 
 @media (min-width: 576px) {
+  #dropdown {
+    max-width: 660px;
+  }
+}
+
+@media (max-width: 576px) {
   .form-box {
     max-width: 540px;
   }
 }
 
-@media (min-width: 576px) {
+@media (max-width: 576px) {
   #dropdown {
-    max-width: 480px;
+    max-width: 307px;
   }
 }
 
