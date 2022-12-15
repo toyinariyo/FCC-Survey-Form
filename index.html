@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+  <!--Functionally similar to: https://survey-form.freecodecamp.rocks/-->
 <head>
  <link rel="stylesheet" href="styles.css">
 </head>
@@ -19,6 +20,64 @@
     <div id="form-section">
       <label id="number-label" for="age">Age (optional)</label>
       <input type="number" name="age" id="number" min="13" max="100" class="form-display" placeholder="Please select your age - minimum age is 13">
+      </div>
+    <div id="form-section">
+      <p>How would you describe your current role?</p>
+      <select id="dropdown" name="role" class="form-display" required>
+        <option disabled selected value>Select current role</option>
+        <option value="student">Student</option>
+        <option value="fulltime">Full-time worker</option>
+        <option value="parttime">Part-time worker</option>
+        <option value="prefernosay">Prefer not to say</option>
+      </select>
+    </div>
+    <div id="form-section">
+      <p>Would you recommend Codepen to other web developers?</p>
+      <label>
+        <input type="radio" value="definitely" name="recommend" id="radio-button" checked>Definitely
+      </label>
+      <label>
+        <input type="radio" value="maybe" name="recommend" id="radio-button">Maybe
+      </label>
+      <label>
+        <input type="radio" value="not-sure" name="recommend" id="radio-button">Not sure
+     </label>
+      <label>
+        <input type="radio" value="nah" name="recommend" id="radio-button">Nah, I hate it
+     </label>
+    </div>
+    <div id="form-section">
+      <p>What is your favourite Codepen feature?</p>
+      <select id="dropdown" name="favourite-feature-dropdown" class="form-display" required>
+        <option disabled selected value>Please select an option</option>
+        <option value="templates">Templates</option>
+        <option value="collaboration">Collaboration mode</option>
+        <option value="patterns">Patterns</option>
+        <option value="emmet">Emmet</option>
+      </select>
+    </div>
+    <div id="form-section">
+      <p>What would you like Codepen to improve? (Check all that apply)</p>
+      <label>
+        <input type="checkbox" value="asset-hosting" name="improved" id="improvement-checkbox">Asset hosting
+      </label>
+      <label>
+        <input type="checkbox" value="storage-limit" name="improved" id="improvement-checkbox">Storage size limits
+      </label>
+      <label>
+        <input type="checkbox" value="mobile-friendly" name="improved" id="improvement-checkbox">Mobile friendly
+      </label>
+      <label>
+        <input type="checkbox" value="accessibility" name="improved" id="improvement-checkbox">Accessibility features
+      </label>
+    </div>
+    <div id="form-section">
+      <p>Do you have any comments? Please write them below</p>
+      <textarea id="comments" name="comment" placeholder="Insert comment here..."></textarea>
+    </div>
+    <div id="form-section">
+      <button type="submit" id="submit" class="submit-button">Submit</button>
+    </div>
   </form>
  </div>
 </body>
